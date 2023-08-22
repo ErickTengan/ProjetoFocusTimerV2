@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FocusTimer v2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="./src/main.js" type="module" defer ></script>
+</head>
+<body>
+  <div id="container">
+    <div id="app">
+
+      <div id="timer">
+
+        <div id="clock">
+          <span id="minutes">25</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </div>
+
+        <div id="controls">
+          <button id="play">
+            <img data-action="play" src="assets/play.svg" alt="">
+          </button>
+          <button id="stop">
+            <img data-action="stop" src="assets/stop.svg" alt="">
+          </button>
+          <button id="plus">
+            <img data-action="plus" src="assets/+.svg" alt="">
+          </button>
+          <button id="minus">
+            <img data-action="minus" src="assets/-.svg" alt="">
+          </button>
+        </div>
+
+      </div>
+
+      <div id="cards">
+
+        <div data-action="forest" class="card" id="forest">
+          <i data-action="forest" class="ph ph-tree"></i>
+        </div>
+
+        <div data-action="rain" class="card" id="rain">
+          <i data-action="rain" class="ph ph-cloud-rain"></i>
+        </div>
+
+        <div data-action="store" class="card" id="store">
+          <i data-action="store" class="ph ph-storefront"></i>
+        </div>
+
+        <div data-action="fire" class="card" id="fire">
+          <i data-action="fire" class="ph ph-fire"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
